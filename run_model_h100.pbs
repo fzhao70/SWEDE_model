@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -A WYOM0200
+#PBS -N swede
+#PBS -j oe
+#PBS -o mljob.log
+#PBS -q casper
+#PBS -l walltime=12:00:00
+#PBS -l select=1:ncpus=16:ngpus=1:mem=128GB:gpu_type=h100
+
+### Activate Python environment and run
+module load conda
+conda activate torch-gpu-cu124
+
+python -u main.py

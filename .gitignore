@@ -1,0 +1,25 @@
+# Model checkpoints and training artifacts
+checkpoints/
+*.pth
+
+# Evaluation output
+predictions/
+*.npy
+
+# Job logs
+mljob.log
+*.log
+*.o[0-9]*
+*.e[0-9]*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Editor / tooling
+.claude/
+.vscode/
+.idea/
+.DS_Store
